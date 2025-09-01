@@ -1,0 +1,53 @@
+body {
+  font-family: "Apple SD Gothic Neo", sans-serif;
+  line-height: 1.8;
+  padding: 1.5em;
+  background: #fdfcf9;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-top: 1em;
+  color: #2e5e4e;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #4e4e4e;
+  margin-bottom: 1em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+.highlight-box {
+  background: #fff9e6;
+  border-left: 4px solid #f4c542;
+  padding: 0.8em 1em;
+  margin: 1.5em 0;
+  font-style: italic;
+}
+
+.image-box {
+  margin: 2em 0;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+.image-box img {
+  width: 40%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  float: left;
+  margin-right:1.6em;
+}
+
+.caption {
+  font-size: 0.95em;
+  color: #777;
+  padding-top: 5em;
+}
+
