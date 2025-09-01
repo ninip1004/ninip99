@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>EPUB.js 뷰어</title>
+  <script src="https://unpkg.com/epubjs/dist/epub.min.js"></script>
+  <style>
+    #viewer {
+      height: 90vh;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>EPUB.js 이북 뷰어</h1>
+  <div id="viewer"></div>
+
+  <script>
+   const urlParams = new URLSearchParams(window.location.search);
+const bookUrl = urlParams.get('book');
+
+const book = ePub(bookUrl);
+const rendition = book.renderTo("viewer", {
+  width: "100%",
+  height: "100%"
+});
+
+rendition.display();
+
+  </script>
+
+</body>
+</html>
